@@ -384,6 +384,21 @@ p {
     color: rgba(224, 224, 224, 0.5);
 }
 
+.cert__controls {
+    min-height: 54px;
+    position: relative;
+}
+
+.cert__arrows {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.service {
+    padding-bottom: 50px;
+}
+
 .service__block {
     display: flex;
 }
@@ -414,7 +429,7 @@ p {
 }
 
 .service__subtitle {
-    font-size: 21px;
+    font-size: 20px;
     line-height: 28px;
     text-transform: uppercase;
     font-variant: small-caps;
@@ -551,10 +566,6 @@ p {
     color: rgba(224, 224, 224, 0.5);
 }
 
-.jobs__subtitle.active {
-    color: #E0E0E0;
-}
-
 .jobs__boxarrow {
     font-size: 21px;
     color: rgba(224, 224, 224, 0.5);
@@ -572,15 +583,6 @@ p {
 
 .jobs__column {
     width: 50%;
-}
-
-.active_arrow {
-    color: #DF9130;
-    transform: rotate(45deg);
-}
-
-.hidden {
-    display: none;
 }
 
 .jobs__controls {
@@ -612,18 +614,18 @@ p {
     background-repeat: no-repeat;
 }
 
-.stats__primary {
+.stats__values {
     display: flex;
     justify-content: space-between;
     /* column-gap: 16px; */
 }
 
-.stats__secondary {
+.stats__descriptions {
     display: flex;
     justify-content: space-between;
 }
 
-.stats__primary p {
+.stats__values p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -637,7 +639,7 @@ p {
     height: 63px;
 }
 
-.stats__secondary p {
+.stats__descriptions p {
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
@@ -714,4 +716,21 @@ p {
     display: flex;
     column-gap: 27px;
     align-items: center;
+}
+
+
+
+/* for JS */
+
+.active {
+    color: #E0E0E0;
+}
+
+.active_arrow {
+    color: #DF9130;
+    transform: rotate(45deg);
+}
+
+.hidden {
+    display: none;
 }
