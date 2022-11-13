@@ -421,6 +421,7 @@ p {
     color: rgba(224, 224, 224, 0.5);
 
     writing-mode: vertical-lr;
+    transform: rotate(180deg);
     white-space: nowrap;
 }
 
