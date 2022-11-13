@@ -384,6 +384,52 @@ p {
     color: rgba(224, 224, 224, 0.5);
 }
 
+.service__block {
+    display: flex;
+}
+
+.service__box {
+    display: flex;
+}
+
+.service__boxhead {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 8px;
+
+    border-right: 1px solid;
+    border-color: rgba(224, 224, 224, 0.5);
+}
+
+.service__boxhead:hover {
+    cursor: pointer;
+}
+
+.service__page {
+    padding-left: 16px;
+    padding-right: 44px;
+}
+
+.service__subtitle {
+    font-size: 21px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    color: rgba(224, 224, 224, 0.5);
+
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+}
+
+.service__boxarrow {
+    font-size: 21px;
+    color: rgba(224, 224, 224, 0.5);
+    transform: rotate(0deg);
+}
+
 .service__content {
     display: flex;
     position: relative;
@@ -492,16 +538,16 @@ p {
     align-items: center;
 }
 
+.jobs__boxhead:hover {
+    cursor: pointer;
+}
+
 .jobs__subtitle {
     font-size: 21px;
     line-height: 28px;
     text-transform: uppercase;
     font-variant: small-caps;
     color: rgba(224, 224, 224, 0.5);
-}
-
-.jobs__subtitle:hover {
-    cursor: pointer;
 }
 
 .jobs__subtitle.active {
