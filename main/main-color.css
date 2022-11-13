@@ -188,7 +188,7 @@ p {
 /* for JS */
 
 .active {
-    color: var(--main-color-4);
+    color: var(--main-color-2);
 }
 
 .active_arrow {
