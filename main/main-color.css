@@ -1,0 +1,168 @@
+:root {
+    --main-color-1: #1A1E23;
+    --main-color-2: #E0E0E0;
+    --main-color-3: #DF9130;
+    --main-color-4: rgba(224, 224, 224, 0.5);
+    --main-color-5: rgba(255, 255, 255, 0.7);
+    --main-color-6: #494949;
+}
+
+p {
+    color: var(--main-color-4);
+}
+
+.title {
+    color: var(--main-color-2);
+}
+
+.title span {
+    color: var(--main-color-2);
+}
+
+.section {
+    background: var(--main-color-1);
+}
+
+.section__logo {
+    color: var(--main-color-2);
+    border: 1px solid var(--main-color-4);
+}
+
+.section__block hr {
+    background: var(--main-color-4);
+}
+
+.section__title {
+    color: var(--main-color-5);
+}
+
+.section__text {
+    border-bottom: var(--main-color-3);
+}
+
+.form__title {
+    color: var(--main-color-2);
+}
+
+.form__input {
+    background: var(--main-color-6);
+    color: var(--main-color-4);
+}
+
+.form__checkbox {
+    background: none;
+}
+
+.form__input p {
+    color: var(--main-color-5);
+}
+
+.form__button {
+    background: var(--main-color-3);
+}
+
+.form__button span {
+    color: var(--main-color-1);
+}
+
+.form__checkbox_input {
+    background: var(--main-color-2);
+}
+
+.header {
+    border-bottom: 2px solid var(--main-color-3);
+}
+
+.header__menu ul li a {
+    color: var(--main-color-6);
+}
+
+.header__phone a {
+    color: var(--main-color-6);
+}
+
+.start {
+    background: var(--main-color-1);
+}
+
+/* .start__over::before {
+    background: rgba(255, 255, 255, 0.18);
+    background: rgba(26, 30, 35, 0.01);
+} */
+
+.start__title {
+    color: var(--main-color-2);
+}
+
+.start__title span {
+    color: var(--main-color-2);
+}
+
+.start__subtitle {
+    color: var(--main-color-4);
+}
+
+.start__economy {
+    color: var(--main-color-2);
+}
+
+.start__materials {
+    color: var(--main-color-2);
+}
+
+.company {
+    background: var(--main-color-1);
+}
+
+.cert__name {
+    color: var(--main-color-2);
+}
+
+.cert__desc {
+    color: var(--main-color-4);
+}
+
+.service__button {
+    background: var(--main-color-3);
+}
+
+.service__button span {
+    color: var(--main-color-1);
+}
+
+.price__text_bold {
+    color: var(--main-color-5);
+}
+
+.jobs__subtitle {
+    color: var(--main-color-4);
+}
+
+.jobs__subtitle.active {
+    color: var(--main-color-2);
+}
+
+.jobs__button {
+    background: var(--main-color-3);
+}
+
+.jobs__button span {
+    color: var(--main-color-1);
+}
+
+.stats__values p {
+    color: var(--main-color-1);
+}
+
+.stats__descriptions p {
+    color: var(--main-color-5);
+}
+
+.questions__phone a {
+    color: var(--main-color-3);
+}
+
+.footer {
+    background: var(--main-color-1);
+    border-top: 1px solid var(--main-color-3);
+}
