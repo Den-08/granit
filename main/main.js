@@ -18,3 +18,4 @@ let func_page = (find_elem) => {
 }
 
 func_page('jobs__boxhead');
+func_page('service__boxhead');
