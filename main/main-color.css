@@ -25,7 +25,7 @@ p {
 
 .section__logo {
     color: var(--main-color-2);
-    border: 1px solid var(--main-color-4);
+    border-color: var(--main-color-4);
 }
 
 .section__block hr {
@@ -70,7 +70,7 @@ p {
 }
 
 .header {
-    border-bottom: 2px solid var(--main-color-3);
+    border-color: var(--main-color-3);
 }
 
 .header__menu ul li a {
@@ -122,6 +122,18 @@ p {
     color: var(--main-color-4);
 }
 
+.service__boxhead {
+    border-color: var(--main-color-4);
+}
+
+.service__subtitle {
+    color: var(--main-color-4);
+}
+
+.service__boxarrow {
+    color: var(--main-color-4);
+}
+
 .service__button {
     background: var(--main-color-3);
 }
@@ -134,12 +146,16 @@ p {
     color: var(--main-color-5);
 }
 
+.jobs__box {
+    border-color: var(--main-color-4);
+}
+
 .jobs__subtitle {
     color: var(--main-color-4);
 }
 
-.jobs__subtitle.active {
-    color: var(--main-color-2);
+.jobs__boxarrow {
+    color: var(--main-color-4);
 }
 
 .jobs__button {
@@ -155,7 +171,7 @@ p {
 }
 
 .stats__descriptions p {
-    color: var(--main-color-5);
+    color: var(--main-color-6);
 }
 
 .questions__phone a {
@@ -164,5 +180,17 @@ p {
 
 .footer {
     background: var(--main-color-1);
-    border-top: 1px solid var(--main-color-3);
+    border-color: var(--main-color-3);
+}
+
+
+
+/* for JS */
+
+.active {
+    color: var(--main-color-4);
+}
+
+.active_arrow {
+    color: var(--main-color-3);
 }
