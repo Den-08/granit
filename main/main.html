@@ -10,41 +10,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+
+    <style>
+        :root {
+            --main-color-1: #1a1e23;
+            --main-color-2: #e0e0e0;
+            --main-color-3: #df9130;
+            --main-color-4: rgba(224, 224, 224, 0.5);
+            --main-color-5: rgba(255, 255, 255, 0.7);
+            --main-color-6: #494949;
+        }
+    </style>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="main-color.css">
+    <link rel="stylesheet" href="../slick/slick.css">
+    <link rel="stylesheet" href="../slick/slick-theme.css">
 </head>
 
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
             <div class="header__logo">
-                <img src="../assets/logo.svg" alt="logo">
+                <img src="./assets/logo.svg" alt="logo">
             </div>
             <nav class="header__menu">
                 <ul>
-                    <li><a href="#">услуги</a></li>
+                    <li><a href="#service">услуги</a></li>
                     <li><a href="#">каталог</a></li>
                     <li><a href="#">спец.техника</a></li>
-                    <li><a href="#">наши работы</a></li>
-                    <li><a href="#">о компании</a></li>
-                    <li><a href="#">контакты</a></li>
+                    <li><a href="#jobs">наши работы</a></li>
+                    <li><a href="#company">о компании</a></li>
+                    <li><a href="#footer">контакты</a></li>
                 </ul>
             </nav>
             <div class="header__phone">
-                <a href="tel: +79990000000">
-                    <img src="../assets/calling.svg" alt="calling">
-                    <span>+7 (999) 000 - 00 - 00</span>
+                <a href="tel: +79990001122">
+                    <img src="./assets/calling.svg" alt="calling">
+                    <span>+7 (999) 000 - 11 - 22</span>
                 </a>
             </div>
         </div>
     </header>
 
     <section class="start">
+        <div class="start__over">
+        </div>
         <div class="wrapper start__wrapper">
             <div class="start__content">
                 <div class="start__subcontent">
-                    <h1 class="start__title"><span>РАБОТЫ НУЛЕВОГО ЦИКЛА </span><span>СТРОИТЕЛЬСТВА</span></h1>
-                    <h2 class="start__subtitle">Комплекс шпунтовых и свайных работ по всей России “Под ключ”</p>
+                    <h1 class="start__title">РАБОТЫ НУЛЕВОГО ЦИКЛА СТРОИТЕЛЬСТВА</h1>
+                    <h2 class="start__subtitle">Комплекс шпунтовых и свайных работ по всей России “Под ключ”</h2>
                 </div>
                 <div class="start__subcontent">
                     <h5 class="start__economy">Сэкономим до 40%</h5>
@@ -54,14 +70,17 @@
                 </div>
             </div>
             <div class="start__picture">
-                <a class="start__component" href="#">
-                    <img class="start__component" src="../assets/start-component.png" alt="start-component">
+                <div class="start__image">
+                    <img src="./assets/start-img.png" alt="start-img" class="start__img">
+                </div>
+                <a class="start__link" href="#price">
+                    <img class="start__component" src="./assets/start-component.png" alt="start-component">
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="section company">
+    <section class="section company" id="company">
         <div class="wrapper">
             <div class="section__page">
                 <div class="section__logo">О</div>
@@ -75,21 +94,16 @@
                 <div class="company__subcontent">
                     <div class="title company__title">Основу компании</div>
                     <p class="company__text">составляют инженеры с опытом более 10 лет в строительстве и шпунтовых
-                        работах.
-
-                        Строгий контроль каждого этапа работ и поставок с использованием современных технологий
-                        позволяет избегать проблем с доставкой материалов и качеством производимых работ.
-                        Основу компании составляют инженеры с опытом более 10 лет в строительстве и шпунтовых работах.
-
-                        Строгий контроль каждого этапа работ и поставок с использованием современных технологий
-                        позволяет избегать проблем с доставкой материалов и качеством производимых работ.Основу компании
-                        составляют инженеры с опытом более 10 лет в строительстве и шпунтовых работах.
-
-                        Строгий контроль каждого этапа работ и поставок с использованием современных технологий
-                        позволяет избегать проблем с доставкой материалов и качеством производимых работ.
-                    </p>
+                        работах. Строгий контроль каждого этапа работ и поставок с использованием современных технологий
+                        позволяет избегать проблем с доставкой материалов и качеством производимых работ. Основу
+                        компании составляют инженеры с опытом более 10 лет в строительстве и шпунтовых работах. Строгий
+                        контроль каждого этапа работ и поставок с использованием современных технологий позволяет
+                        избегать проблем с доставкой материалов и качеством производимых работ.Основу компании
+                        составляют инженеры с опытом более 10 лет в строительстве и шпунтовых работах. Строгий контроль
+                        каждого этапа работ и поставок с использованием современных технологий позволяет избегать
+                        проблем с доставкой материалов и качеством производимых работ.</p>
                 </div>
-                <img src="../assets/company.png" alt="company">
+                <img class="company__img" src="./assets/company.png" alt="company">
             </div>
         </div>
     </section>
@@ -104,46 +118,87 @@
                     <div class="section__title">Сертификаты</div>
                 </div>
             </div>
-            <div class="cert__content">
-                <div class="cert__card">
-                    <img src="../assets/certificate.png" alt="certificate">
-                    <div class="cert__name">Сертификат соответствия системе качества ISO 9001
-                    </div>
-                    <div class="cert__desc">
-                        Применительно к выполнению работ с проектной док., инженерными изысканиями, строительству и др.
-                    </div>
-                </div>
-                <div class="cert__card">
-                    <img src="../assets/certificate.png" alt="certificate">
-                    <div class="cert__name">Сертификат соответствия системе качества ISO 9001
-                    </div>
-                    <div class="cert__desc">
-                        Применительно к выполнению работ с проектной док., инженерными изысканиями, строительству и др.
+
+            <div class="cert__content cert__slider">
+                <div>
+                    <div class="cert__slide">
+                        <div class="cert__card">
+                            <img src="./assets/certificate.png" alt="certificate">
+                            <div class="cert__name">
+                                Сертификат соответствия системе качества ISO 9001 №1 </div>
+                            <div class="cert__desc">
+                                Применительно к выполнению работ с проектной док., инженерными
+                                изысканиями, строительству и др. </div>
+                        </div>
                     </div>
                 </div>
-                <div class="cert__card">
-                    <img src="../assets/certificate.png" alt="certificate">
-                    <div class="cert__name">Сертификат соответствия системе качества ISO 9001
+                <div>
+                    <div class="cert__slide">
+                        <div class="cert__card">
+                            <img src="./assets/certificate.png" alt="certificate">
+                            <div class="cert__name">
+                                Сертификат соответствия системе качества ISO 9001 №2 </div>
+                            <div class="cert__desc">
+                                Применительно к выполнению работ с проектной док., инженерными
+                                изысканиями, строительству и др. </div>
+                        </div>
                     </div>
-                    <div class="cert__desc">
-                        Применительно к выполнению работ с проектной док., инженерными изысканиями, строительству и др.
+                </div>
+                <div>
+                    <div class="cert__slide">
+                        <div class="cert__card">
+                            <img src="./assets/certificate.png" alt="certificate">
+                            <div class="cert__name">
+                                Сертификат соответствия системе качества ISO 9001 №3 </div>
+                            <div class="cert__desc">
+                                Применительно к выполнению работ с проектной док., инженерными
+                                изысканиями, строительству и др. </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: none;">
+                    <div class="cert__slide">
+                        <div class="cert__card">
+                            <img src="./assets/certificate.png" alt="certificate">
+                            <div class="cert__name">
+                                Сертификат соответствия системе качества ISO 9001 №4 </div>
+                            <div class="cert__desc">
+                                Применительно к выполнению работ с проектной док., инженерными
+                                изысканиями, строительству и др. </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;">
+                    <div class="cert__slide">
+                        <div class="cert__card">
+                            <img src="./assets/certificate.png" alt="certificate">
+                            <div class="cert__name">
+                                Сертификат соответствия системе качества ISO 9001 №5 </div>
+                            <div class="cert__desc">
+                                Применительно к выполнению работ с проектной док., инженерными
+                                изысканиями, строительству и др. </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="cert__controls controls">
                 <div class="cert__arrows controls__arrows">
-                    <a class="cert__left controls__left">
-                        <img class="controls__img_left" src="../assets/arrow-lg.svg" alt="arrow-lg">
-                    </a>
-                    <a class="cert__right controls__right">
-                        <img class="controls__img_right" src="../assets/arrow-ry.svg" alt="arrow-ry">
-                    </a>
+                    <div class="cert__left controls__arrow controls__left">
+                        <!-- <img class="controls__img_left" src="./assets/arrow-lg.svg" alt="arrow-lg"> -->
+                        &#10230;
+                    </div>
+                    <div class="cert__right controls__arrow controls__right">
+                        <!-- <img class="controls__img_right" src="./assets/arrow-ry.svg" alt="arrow-ry"> -->
+                        &#10230;
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section service">
+    <section class="section service" id="service">
         <div class="wrapper">
             <div class="section__page">
                 <div class="section__logo">У</div>
@@ -155,42 +210,40 @@
             </div>
             <div class="service__block">
                 <div class="service__box">
+                    <!-- извлечение шпунта ларсена -->
                     <div class="service__boxhead">
                         <div class="service__subtitle active">извлечение шпунта ларсена</div>
                         <div class="service__boxarrow active_arrow">&#129130;</div>
                     </div>
                     <div class="service__page">
                         <div class="service__content">
-                            <img src="../assets/service.png" alt="service">
+                            <img class="service__img" src="./assets/service.png" alt="service">
                             <div class="service__subcontent">
                                 <div class="service__title title">извлечение шпунта ларсена</div>
                                 <p class="service__text">Шпунтовые ограждающие конструкции - временные сооружения. После
-                                    окончания
-                                    строительных работ необходимость в таких ограждениях пропадает. Часто их оставляют в
-                                    земле и
-                                    закапывают, но данный способ не экономичен.
-
-                                    Многие полагают, что извлечение шпунта слишком затратное мероприятие и проще
-                                    приобрести
-                                    новые
-                                    трубы,
-                                    чем тратить время и деньги на вытаскивание из грунта старых. Это нет так.
+                                    окончания строительных работ необходимость в таких ограждениях пропадает. Часто их
+                                    оставляют в земле и закапывают, но данный способ не экономичен. Многие полагают, что
+                                    извлечение шпунта слишком затратное мероприятие и проще приобрести новые трубы, чем
+                                    тратить время и деньги на вытаскивание из грунта старых. Это нет так.
                                 </p>
                             </div>
-                            <a href="#" class="service__button">
-                                <span>узнать цену</span><img src="../assets/arrow-r.svg" alt="arrow-r">
+                            <a href="#" class="service__button button">
+                                <span>узнать цену</span><span class="button__arrow">➜</span>
+                                <!-- <img src="./assets/arrow-r.svg" alt="arrow-r"> -->
                             </a>
                         </div>
                     </div>
+
                 </div>
                 <div class="service__box">
+                    <!-- проектирование шпунтового ограждения -->
                     <div class="service__boxhead">
                         <div class="service__subtitle">проектирование шпунтового ограждения</div>
                         <div class="service__boxarrow">&#129130;</div>
                     </div>
                     <div class="service__page hidden">
                         <div class="service__content">
-                            <img src="../assets/service.png" alt="service">
+                            <img class="service__img" src="./assets/service.png" alt="service">
                             <div class="service__subcontent">
                                 <div class="service__title title">проектирование шпунтового ограждения</div>
                                 <p class="service__text">Другой текст Lorem ipsum, dolor sit amet consectetur
@@ -199,20 +252,22 @@
                                     praesentium alias tenetur possimus!
                                 </p>
                             </div>
-                            <a href="#" class="service__button">
-                                <span>узнать цену</span><img src="../assets/arrow-r.svg" alt="arrow-r">
+                            <a href="#" class="service__button button">
+                                <span>узнать цену</span><span class="button__arrow">➜</span>
+                                <!-- <img src="./assets/arrow-r.svg" alt="arrow-r"> -->
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="service__box">
+                    <!-- погружение шпунта ларсена -->
                     <div class="service__boxhead">
                         <div class="service__subtitle">погружение шпунта ларсена</div>
                         <div class="service__boxarrow">&#129130;</div>
                     </div>
                     <div class="service__page hidden">
                         <div class="service__content">
-                            <img src="../assets/service.png" alt="service">
+                            <img class="service__img" src="./assets/service.png" alt="service">
                             <div class="service__subcontent">
                                 <div class="service__title title">погружение шпунта ларсена</div>
                                 <p class="service__text">Еще один текст Lorem, ipsum dolor sit amet consectetur
@@ -221,8 +276,9 @@
                                     recusandae omnis enim.
                                 </p>
                             </div>
-                            <a href="#" class="service__button">
-                                <span>узнать цену</span><img src="../assets/arrow-r.svg" alt="arrow-r">
+                            <a href="#" class="service__button button">
+                                <span>узнать цену</span><span class="button__arrow">➜</span>
+                                <!-- <img src="./assets/arrow-r.svg" alt="arrow-r"> -->
                             </a>
                         </div>
                     </div>
@@ -231,7 +287,7 @@
         </div>
     </section>
 
-    <section class="section price">
+    <section class="section price" id="price">
         <div class="wrapper">
             <div class="section__page">
                 <div class="section__logo">Р</div>
@@ -243,12 +299,12 @@
             </div>
             <div class="price__content">
                 <div class="price__subcontent">
-                    <div class="price__title title"><span>РАССЧИТАЕМ СТОИМОСТЬ </span><span>шпунтового ограждения</span>
+                    <div class="price__title title"><span>РАССЧИТАЕМ СТОИМОСТЬ шпунтового ограждения</span>
                     </div>
                     <p class="price__text">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
                     <p class="price__text price__text_bold">Пришлите ваш проект и получите расчет</p>
                     <p class="price__text">Расчитаем за 2 часа</p>
-                    <img class="price__img" src="../assets/price.png" alt="price">
+                    <img class="price__img" src="./assets/price.png" alt="price">
                 </div>
                 <div class="price__form">
                     <form class="form" action="#">
@@ -263,7 +319,7 @@
                             <p>Я согласен(а) на обработку персональных данных</p>
                         </div>
                         <a href="#" class="form__input form__button" type="submit">
-                            <span>Отправить заявку</span><img src="../assets/upload.svg" alt="upload">
+                            <span>Отправить заявку</span><img src="./assets/upload.svg" alt="upload">
                         </a>
                     </form>
                 </div>
@@ -271,7 +327,7 @@
         </div>
     </section>
 
-    <section class="section jobs">
+    <section class="section jobs" id="jobs">
         <div class="wrapper">
             <div class="section__page">
                 <div class="section__logo">Н</div>
@@ -283,7 +339,7 @@
             </div>
             <div class="jobs__content">
                 <div class="jobs__subcontent">
-                    <div class="jobs__title title">объекты сданные нами</div>
+                    <div class="jobs__title title">объекты сданные нами</div> <!-- объекты сданные нами -->
                     <div class="jobs__box">
                         <div class="jobs__boxhead">
                             <div class="jobs__subtitle active">СТРОИТЕЛЬСТВО 2-Х ШПУНТОВЫХ КОТЛОВАНОВ</div>
@@ -414,20 +470,38 @@
                         </div>
                     </div>
                 </div>
-                <img src="../assets/jobs-1.png" alt="jobs">
-            </div>
-            <div class="jobs__controls">
-                <a href="#" class="jobs__button">
-                    <span>Смотреть еще</span><img src="../assets/arrow-r.svg" alt="arrow-r">
-                </a>
-                <div class="jobs__arrows arrows">
-                    <a href="#" class="arrows__link">
-                        <img class="arrows__left" src="../assets/arrow-lg.svg" alt="arrow-lg">
-                    </a>
-                    <a href="#" class="arrows__link">
-                        <img class="arrows__right" src="../assets/arrow-ry.svg" alt="arrow-ry">
-                    </a>
+                <div class="jobs__picture">
+                    <div class="jobs__slider">
+                        <div>
+                            <div class="jobs__slide">
+                                <img class="jobs__img" src="./assets/jobs-1.png" alt="jobs">
+                                <!-- /assets/jobs-1.png -->
+                            </div>
+                        </div>
+                        <div style="display: none;">
+                            <div class="jobs__slide">
+                                <img class="jobs__img" src="./assets/jobs-2.png" alt="jobs">
+                                <!-- /assets/jobs-2.png -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="jobs__controls controls">
+                <a href="#" class="jobs__button button">
+                    <span>Смотреть еще</span><span class="button__arrow">➜</span>
+                    <!-- <img src="./assets/arrow-r.svg" alt="arrow-r"> -->
+                </a>
+                <div class="jobs__arrows controls__arrows">
+                    <div class="jobs__left controls__arrow controls__left">
+                        ⟶
+                    </div>
+                    <div class="jobs__right controls__arrow controls__right">
+                        ⟶
+                    </div>
+                </div>
+                <!-- <img class="arrows__left" src="./assets/arrow-lg.svg" alt="arrow-lg"> -->
+                <!-- <img class="arrows__right" src="./assets/arrow-ry.svg" alt="arrow-ry"> -->
             </div>
         </div>
     </section>
@@ -435,14 +509,14 @@
     <div class="stats">
         <div class="wrapper">
             <div class="stats__values">
-                <p>138</p>
-                <p>110 000 т.</p>
-                <p>100+</p>
+                <p class="stats__val_1">138</p> <!-- 138 -->
+                <p class="stats__val_2">110 000 т.</p> <!-- 110 000 т. -->
+                <p class="stats__val_3">100+</p> <!-- 100+ -->
             </div>
             <div class="stats__descriptions">
-                <p>выполненных работ</p>
-                <p>шпунта поставленно</p>
-                <p>отгруженных машин</p>
+                <p class="stats__desc_1">выполненных работ</p> <!-- выполненных работ -->
+                <p class="stats__desc_2">шпунта поставленно</p> <!-- шпунта поставленно -->
+                <p class="stats__desc_3">отгруженных машин</p> <!-- отгруженных машин -->
             </div>
         </div>
     </div>
@@ -464,9 +538,9 @@
                     <p class="questions__text">Или нужна консультация?</p>
                     <p class="questions__text">Заполните форму или позвоните нам </p>
                     <div class="questions__phone">
-                        <a class="questions__link" href="tel: +79990000000">
-                            <img src="../assets/calling-gold.svg" alt="calling-gold">
-                            <span>+7 (999) 000 - 00 - 00</span>
+                        <a class="questions__link" href="tel: +79990001122">
+                            <img src="./assets/calling-gold.svg" alt="calling-gold">
+                            <span>+7 (999) 000 - 11 - 22</span>
                         </a>
                     </div>
                 </div>
@@ -481,7 +555,7 @@
                             <p>Я согласен(а) на обработку персональных данных</p>
                         </div>
                         <a href="#" class="form__input form__button" type="submit">
-                            <span>Отправить заявку</span><img src="../assets/upload.svg" alt="upload">
+                            <span>Отправить заявку</span><img src="./assets/upload.svg" alt="upload">
                         </a>
                     </form>
                 </div>
@@ -489,29 +563,35 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="wrapper">
             <div class="footer__content">
                 <div class="footer__subcontent">
-                    <p class="footer__text">Политика конфиденциальности</p>
-                    <p class="footer__text">ООО "СК Гранит"</p>
-                    <p class="footer__text">ИНН 5257207221</p>
-                    <p class="footer__text">Copyright 2022 г.</p>
+                    <p class="footer__text">Политика конфиденциальности</p> <!-- Политика конфиденциальности -->
+                    <p class="footer__text">ООО "СК Гранит"</p> <!-- ООО "СК Гранит" -->
+                    <p class="footer__text">ИНН 5257207221</p> <!-- ИНН 5257207221 -->
+                    <p class="footer__text">Copyright 2022 г.</p> <!-- Copyright 2022 г. -->
                 </div>
                 <div class="footer__logo">
-                    <img src="../assets/logo-white.svg" alt="logo-white">
+                    <img src="./assets/logo-white.svg" alt="logo-white"> <!-- /assets/logo-white.svg -->
                 </div>
                 <div class="footer__contacts">
-                    <a href="#"><img src="../assets/mail.svg" alt="mail"></a>
-                    <a href="https://api.whatsapp.com/send/?phone=79990000000"><img src="../assets/whatsapp.svg"
+                    <a href="mailto:pochta@mail.ru"><img src="./assets/mail.svg" alt="mail"></a>
+                    <a href="https://api.whatsapp.com/send/?phone=79990001122"><img src="./assets/whatsapp.svg"
                             alt="whatsapp"></a>
-                    <a href="#"><img src="../assets/telegram.svg" alt="telegram"></a>
+                    <a href="https://t.me/"><img src="./assets/telegram.svg" alt="telegram"></a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="main.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="../slick/slick.js"></script>
+    <script type="text/javascript" src="../slick/slick-conf.js"></script>
 </body>
 
 </html>
