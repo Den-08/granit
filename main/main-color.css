@@ -46,11 +46,11 @@ p {
 
 .form__input {
     background-color: var(--main-color-6);
-    color: var(--main-color-4);
+    color: var(--main-color-2);
 }
 
 .form__input::placeholder {
-    color: var(--main-color-5);
+    color: var(--main-color-4);
 }
 
 .form__checkbox {
@@ -71,6 +71,10 @@ p {
 
 .form__checkbox_input {
     background-color: var(--main-color-2);
+}
+
+.controls__arrow {
+    color: var(--main-color-3);
 }
 
 .header {
