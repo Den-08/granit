@@ -164,20 +164,6 @@ p {
   border-radius: 9px;
 }
 
-.controls__arrows {
-  display: flex;
-}
-.controls__arrow {
-  font-size: 52px;
-  color: #DF9130;
-}
-.controls__arrow:hover {
-  cursor: pointer;
-}
-.controls__left {
-  transform: rotateY(180deg);
-}
-
 .button__arrow {
   font-size: 24px;
 }
@@ -302,7 +288,8 @@ p {
 }
 .start__image {
   position: relative;
-  border-radius: 234.5px 234.5px 0px 0px;
+  border-radius: 236px 236px 0px 0px;
+  overflow: hidden;
 }
 .start__img {
   height: 100%;
@@ -324,6 +311,10 @@ p {
 .company__title {
   text-transform: none;
   padding-bottom: 8px;
+}
+.company__img {
+  border-radius: 0px 79px 0px 105px;
+  overflow: hidden;
 }
 
 .cert {
@@ -458,9 +449,10 @@ p {
 .price__img {
   padding-top: 12px;
   border-radius: 0px 79px 0px 105px;
+  overflow: hidden;
 }
 .price__form .form__input:nth-child(2) {
-  border-radius: 23.5px 0px 0px 0px;
+  border-radius: 24px 0px 0px 0px;
 }
 .price__form .form__input:nth-last-child(3) {
   border-radius: 0px 0px 40px 0px;
@@ -520,11 +512,21 @@ p {
 }
 .jobs__picture {
   max-width: 510px;
+}
+.jobs__slide {
+  width: 510px;
+  height: 462px;
   border-radius: 0px 0px 230px 0px;
+  overflow: hidden;
+}
+.jobs__img {
+  width: 100%;
+  height: 100%;
 }
 .jobs__controls {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .jobs__button {
   width: 375px;
@@ -539,6 +541,25 @@ p {
   text-transform: uppercase;
   color: #1A1E23;
   padding-right: 10px;
+}
+.jobs__arrows {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+}
+
+.controls__arrows {
+  display: flex;
+}
+.controls__arrow {
+  font-size: 52px;
+  color: #DF9130;
+}
+.controls__arrow:hover {
+  cursor: pointer;
+}
+.controls__left {
+  transform: rotateY(180deg);
 }
 
 .stats {
@@ -605,7 +626,7 @@ p {
   padding-top: 11px;
 }
 .questions__form .form__input:nth-child(2) {
-  border-radius: 0px 23.5px 0px 0px;
+  border-radius: 0px 24px 0px 0px;
 }
 .questions__form .form__input:nth-last-child(3) {
   border-radius: 0px 0px 0px 40px;
@@ -765,7 +786,8 @@ p {
   }
   .service__img {
     max-width: 185px;
-    border-radius: 28.1694px 0px 0px 0px;
+    border-radius: 28px 0px 0px 0px;
+    overflow: hidden;
   }
   .service__button {
     position: static;
